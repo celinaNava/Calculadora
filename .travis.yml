@@ -1,0 +1,17 @@
+language: python
+python:
+  - "2.7"
+install:
+  echo "Aqui se instalan las dependendencias"
+# - pip install django
+ 
+before_script:
+  - echo "Antes de ejecutar un script"
+  
+script:
+  - echo "Pruebas unitarias de Calculaora 2019"
+  - python Test*.py
+  - echo "Finalizar"
+ 
+notifications:
+email: false
